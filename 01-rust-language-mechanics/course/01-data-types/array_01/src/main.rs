@@ -21,4 +21,5 @@ fn main() {
     //debug
     let cpu_architectures = ["x86_64", "ARM64", "RISC-V", "i386"];
     println!("{cpu_architectures:#?}",);
+    dbg!(cpu_cores);
 }
