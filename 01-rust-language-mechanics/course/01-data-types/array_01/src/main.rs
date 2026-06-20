@@ -14,7 +14,11 @@ fn main() {
     let last_cores = cpu_cores[3];
     println!("{last_cores}");
     println!("{number_len}");
+
     //display cpu_cores
     println!("{:?}", cpu_cores);
-}
 
+    //debug
+    let cpu_architectures = ["x86_64", "ARM64", "RISC-V", "i386"];
+    println!("{cpu_architectures:#?}",);
+}
