@@ -24,7 +24,7 @@ fn main() {
     println!("result: {result}");
 
     let sys_index: isize = 64;
-    let _counter: usize = 32;
+    let counter: usize = 32;
 
     let exact_factor: f64 = 3.1415926535;
     println!(
@@ -40,7 +40,7 @@ fn main() {
 
     //3
     let mut audit_scores: [i8; 4] = [8, 16, 32, 64];
-    let _array_len = audit_scores.len();
+    let array_len = audit_scores.len();
     audit_scores[2] = 20;
     let master_record = (exact_factor, exact_cast, audit_scores, sys_index);
     let first = master_record.0;
@@ -58,4 +58,11 @@ fn main() {
     let positive = num.is_positive();
     let negative = num.is_negative();
     println!("Number is positive?:{positive}\nNumber is negative?{negative}");
+
+    //ranges
+    let num_range: std::ops::Range<i8> = 1..50;
+    let char_range: std::ops::RangeInclusive<char> = 'a'..='z';
+    println!("Range:{:#?}", char_range);
+
+    //for
 }
