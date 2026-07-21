@@ -4,7 +4,7 @@ fn main() {
     swim_in_profit();
     open_store("Queens");
     bake_pizza(8, "mashroom");
-    close_stor("Harlem", 118, 2124, "11 PM");
+    close_store("Harlem", 118, 2124, "11 PM");
 }
 
 fn open_store(neighberhood: &str) {
@@ -19,7 +19,7 @@ fn swim_in_profit() {
     println!("so much $$$, so little time");
 }
 
-fn close_stor(location: &str, sold_pizzas: u8, revenue: i32, time: &str) {
+fn close_store(location: &str, sold_pizzas: u8, revenue: i32, time: &str) {
     println!(
         "Closing my pizza store in {location}. We sold {sold_pizzas} pizzas today, made ${revenue}, and closed at {time}."
     );
